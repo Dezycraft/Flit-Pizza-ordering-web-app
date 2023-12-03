@@ -2,11 +2,12 @@ import NavBar from "../../components/layout/NavBar";
 import Image from 'next/image'
 import { FaShoppingCart } from "react-icons/fa";
 import { FaStar } from "react-icons/fa";
+import Link from 'next/Link';
 
 export default function page() {
   return (
     <>
-    <NavBar />
+      <NavBar />
       <div className="flex flex-col sm:flex-row justify-between p-6 rounded-md">
         <div className="flex flex-col mb-4 sm:mb-0">
           <button className="border rounded-md p-2 bg-amber-500 border-r-50px ">
@@ -48,10 +49,12 @@ export default function page() {
             ))}
           </div>
           <p className="text-gray-500 text-sm">This is burga pizza</p>
-          <button className="border rounded-full px-5 py-3 bg-amber-500 text-white hover:bg-amber-500 border-r-50px mt-6 flex justify-center gap-2 text-md hover:text-gray-800">
-            <FaShoppingCart className="text-2xl" />
-            ORDER NOW
-          </button>
+          <Link href="../../components/layout/ProductOrderPage.js">
+            <button className="border rounded-full px-5 py-3 bg-amber-500 text-white hover:bg-amber-500 border-r-50px mt-6 flex justify-center gap-2 text-md hover:text-gray-800">
+              <FaShoppingCart className="text-2xl" />
+              ORDER NOW
+            </button>
+          </Link>
         </div>
         <div className="hover:bg-gray-100 transition-all hover:shadow-md p-6 rounded-lg border">
           <div className="">
@@ -242,6 +245,7 @@ export default function page() {
             ORDER NOW
           </button>
         </div>
+        
       </div>
     </>
   );

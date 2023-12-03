@@ -27,8 +27,8 @@ export default function NavBar() {
       ></Image>
       <nav className="flex pt-8 gap-6 font-bold">
         <ul className="flex gap-6">
-          <Link href={""}>HOME</Link>
-          <Link href={""}>PRODUCTS</Link>
+          <Link href="/">HOME</Link>
+          <Link href="/productPage">PRODUCTS</Link>
           <Link href={""}>PAGES</Link>
           <Link href={""}>BLOG</Link>
           <Link href={""}>CONTACT</Link>
