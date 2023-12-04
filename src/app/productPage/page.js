@@ -1,4 +1,5 @@
 import NavBar from "../../components/layout/NavBar";
+import Footer from "../../components/layout/Footer";
 import Image from 'next/image'
 import { FaShoppingCart } from "react-icons/fa";
 import { FaStar } from "react-icons/fa";
@@ -247,6 +248,7 @@ export default function page() {
         </div>
         
       </div>
+      <Footer />
     </>
   );
 }

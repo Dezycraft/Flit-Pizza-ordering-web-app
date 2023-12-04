@@ -1,10 +1,11 @@
+//import { useState } from 'react';
 import Image from "next/image";
 import Link from "next/Link";
-import { FaSistrix } from "react-icons/fa";
-import { FaShoppingCart } from "react-icons/fa";
+import { FaBars, FaSistrix, FaShoppingCart } from 'react-icons/fa';
+
 export default function NavBar() {
   return (
-    <header className=" sticky top-0 flex px-4 justify-between z-10 bg-white">
+    <header className="sticky top-0 flex px-4 justify-between z-10 bg-white">
       <a href="/">
         <Image
           className="pt-2 "
@@ -29,9 +30,9 @@ export default function NavBar() {
         <ul className="flex gap-6">
           <Link href="/">HOME</Link>
           <Link href="/productPage">PRODUCTS</Link>
-          <Link href={""}>PAGES</Link>
-          <Link href={""}>BLOG</Link>
-          <Link href={""}>CONTACT</Link>
+          <Link href="/order">PAGES</Link>
+          <Link href="/pizzon-app/src/components/layout/HeroPage">BLOG</Link>
+          <Link href="/pizzon-app/src/components/layout/Footer">CONTACT</Link>
         </ul>
         <FaSistrix className="text-xl" />
         <FaShoppingCart className="text-blue-600 text-2xl" />
@@ -39,3 +40,5 @@ export default function NavBar() {
     </header>
   );
 }
+
+
